@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPal Language Odyssey - Text-to-Speech Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="gameContainer">
+            <h1>Language Odyssey</h1>
+            <p id="sentenceDisplay"></p>
+            <select id="languageSelect"></select>
+            <select id="sentenceSelect"></select>
+            <select id="speedSelect">
+                <option value="0.5">0.5x</option>
+                <option value="0.75">0.75x</option>
+                <option value="1" selected>1x/normal</option>
+                <option value="1.5">1.5x</option>
+                <option value="1.75">1.75x</option>
+                <option value="2">2x</option>
+            </select>
+            <button class="actionButton" id="startGameButton">Start Game</button>
+            <button class="actionButton" id="readSentenceButton" disabled>Read Sentence</button>
+        </div>
+
+        <!-- New section for the text input and speak button -->
+        <div id="textInputSection">
+            <textarea id="userInput" rows="4" cols="50" placeholder="Enter text for speech synthesis..."></textarea>
+            <button id="speakButton">Speak</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
